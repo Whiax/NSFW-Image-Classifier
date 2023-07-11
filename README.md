@@ -6,7 +6,7 @@ The model is able to detect several types of NSFW/Explicit content.
 ## Usage
 You must read nsfwmodel.py to be able to test the model and to use it for your use case.  
 The base model is a pretrained convnext_base_in22ft1k, the nsfw binary classifier is a linear classifier trained on features produced by the base model.
-- (image) > (convnext_base_in22ft1k) > (nsfwmodel_281) > (nsfw score) > (is_nsfw?)
+- image > (convnext_base_in22ft1k) > (nsfwmodel_281) > nsfw_score > is_nsfw?
 
 Demo:
 ```
